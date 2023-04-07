@@ -1,0 +1,52 @@
+@media(max-width:500px){
+    .logo-container img{
+        height: 34px;
+        width: 91px;
+        margin-left: 9px;
+        margin-top: 18px;
+    }
+    nav{
+        display: none;
+    }
+    .header2{
+        display: none;
+    }
+    .right-image{
+        display: none;
+    }
+    .mobile-image{
+        width: 100%;
+        height: 353px;
+    }
+    .image-container1{
+        position: relative;
+        bottom: 224px;
+    }
+   .big-text{
+    position: relative;
+    top: 380px;
+    font-size: 18px;
+    text-align: center;
+   }
+   .big-text p{
+    color:rgb(131, 128, 128);;
+   }
+   br{
+    display: none;
+   }
+   .img-container2 img{
+    width: 24%;
+    margin-top: 66px;
+}
+}
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+button{
+    padding: 18px;
+    border-radius: 23px;
+    width: 50%;
+    background-color: rgb(24, 23, 23);
+    color: white;
+    font-size: 18px;
+}

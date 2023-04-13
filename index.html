@@ -8,21 +8,26 @@
     <title>Document</title>
 </head>
 <body>
-     <header class="main-navigation">
+  <div class="navbar-container">
         <div class="logo-container">
             <img class="logo" src="/Images/logo.svg">
             </div>
-            <nav>
+            <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+<img class="hamz" src="Images/icon-close-menu.svg"></a>
                 <a href="">Features</a>
                 <a href="">Company</a>
-                <a href="">career</a>
+                <a href="">Career</a>
                 <a href="">About</a>
-                </nav>
             <div class="header2">
                 <h3>Login</h3>
                 <h4>Register</h4>
+          </div>
             </div>
-    </header>
+             <div id="main" onclick="openNav()">
+                <img class="ham" src="Images/icon-menu.svg">
+  </div>
+    </div>
     <div class="Big-container">
         <div class="big-text">
         <h1>Make<br>
@@ -43,5 +48,23 @@
         <img src="Images/client-meet.svg">
         <img src="Images/client-maker.svg">
     </div>
+    <script>
+// function myFunction() {
+//   var x = document.getElementById("myLinks");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  // document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+}
+</script>
 </body>
 </html>

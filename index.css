@@ -5,12 +5,48 @@
         margin-left: 9px;
         margin-top: 18px;
     }
-    nav{
-        display: none;
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: -20px;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
     }
-    .header2{
-        display: none;
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
     }
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+    #main {
+        /* transition: margin-left .5s; */
+        padding: 16px;
+        margin-left: 290px;
+        margin-top: -50px;
+    }
+    
     .right-image{
         display: none;
     }
@@ -42,6 +78,10 @@
 body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+.logo{
+    margin-left: 20px;
+    margin-top: 10px;
+}
 button{
     padding: 18px;
     border-radius: 23px;
@@ -49,4 +89,70 @@ button{
     background-color: rgb(24, 23, 23);
     color: white;
     font-size: 18px;
+    cursor: pointer;
+}
+button:hover{
+    color: #111;
+    background-color: #fff;
+}
+@media(min-width:1200px){
+    .hamz{
+        display: none;
+    }
+    .ham{
+        display: none;
+    }
+    .mobile-image{
+        display: none;
+    }
+    /* .navbar-container{
+    display: flex; */
+}
+.sidebar{
+    display: flex;
+    /* gap:10px; */
+}
+.sidebar a{
+    text-decoration: none;
+    color: #818181;
+    /* padding:1px 11px 0px 28px */
+    margin-top: -25px;
+    margin-left: 70px;
+}
+.header2{
+    display: flex;
+    gap: 40px;
+    color: #818181;
+    /* text-align: right; */
+    margin-top: -46px;
+    margin-left: 500px;
+}
+.right-image{
+    width: 100%;
+    height: 480px;
+}
+.Big-container{
+    display: flex;
+    margin-left: 211px;
+    gap: 100px;
+}
+.big-text h1{
+    font-size: 70px;
+    width: 185%;
+}.big-text p{
+    color: #818181;
+}
+.img-container2{
+    display: flex;
+    gap: 30px;
+    margin-left: 220px;
+    height: 15px;
+    margin-top: -23px;
+}
+.header2 h4{
+    border: 1px solid black;
+    padding: 10px 20px 9px 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
 }
